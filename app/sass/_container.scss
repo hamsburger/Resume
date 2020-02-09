@@ -1,0 +1,30 @@
+@import './boxStyling'; 
+
+@mixin container-text-format{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-top: 10px; 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include container-text-format();
+    @include box_shadow();
+    background-color: white;
+    transition: 1s linear;
+} .container:hover {
+    @include invert();  
+}
+
+/* All divs inside the container */
+.container > div{
+    width: 100%;
+} 
+
+ul{
+    margin-top: 0px;
+    padding-left: 20px;
+}

@@ -1,0 +1,29 @@
+@import './header';
+@import './container'; 
+
+*{
+    font-family: Garamond, sans-serif;
+}
+
+body{
+    background-color: pink;
+    transition: linear 1s;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+}
+
+
+h2{
+    margin-bottom: 1px;
+}
+
+h3{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 540;
+    letter-spacing: 1px;
+    font-size: 17px;
+}

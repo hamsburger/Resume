@@ -1,0 +1,19 @@
+@import 'boxStyling'; 
+
+@mixin header_text_format{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    line-height: 150%;
+    padding: 10px;
+    text-align: center;
+}
+
+header{
+    @include header_text_format();
+    @include box_shadow();
+    background-color: white;
+    transition: linear 1s;
+
+} header:hover {
+    @include invert();
+} 
